@@ -79,6 +79,7 @@ main {
   /* justify-content: center; */
   align-items: center;
   padding: 20px;
+  margin-bottom: 5%;
 }
 
 .about-me img {
@@ -111,3 +112,39 @@ main {
   font-size: 1.5rem;
 }
 
+
+/* project-sec */
+
+.project-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-sec h3 {
+  font-size: 3rem;
+  display: none;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 3%
+}
+
+.projects div {
+  width: 23%;
+  margin-bottom: 5%;
+}
+
+.projects div img {
+  border-radius: 20px 0px 20px 0;
+}
+
+.projects div h5 {
+  font-size: 1.8rem;
+}
+
+.projects div p {
+  display: none;
+}
