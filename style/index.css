@@ -1,1 +1,287 @@
 /* Add CSS styling here */
+
+/* google fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+
+/* Reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Utility */
+
+:root {
+  --nightblue: #022449;
+  --neonorange: #f26d42;
+  --blues: #55BDCA;
+  --sokkablue: #96ffff;
+  --lightsokkablue: #c8eff9;
+  --whitish: #faf9f9;
+}
+
+a {
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  color: var(--whitish);
+  background: var(--neonorange);
+}
+
+a:hover {
+  background: var(--nightblue);
+  color: var(--neonorange);
+  /* font-weight: bold; */
+  border-bottom: 2px solid var(--neonorange);
+  border-radius: 0px;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--nightblue);
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+header h1 {
+  font-size: 4.5rem;
+  text-transform: lowercase;
+  color: var(--whitish);
+  margin: 10% 0 1% 0;
+}
+
+header nav a {
+  padding: 5px 15px;
+  margin-right: 5px;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+
+/* main */
+main {
+  margin-top: 1%;
+  padding: 1%;
+  background: var(--whitish);
+  border-radius: 10px;
+}
+
+/* sections */
+
+/* about-me */
+.about-me {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+
+.about-me img {
+  width: 40%;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+}
+
+.about-content h3 {
+  font-size: 6rem;
+}
+
+
+.about-content a {
+  font-size: 2.5rem;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  transition: 0.3s ease-in-out;
+}
+
+.about-content p {
+  font-size: 1.5rem;
+}
+
+
+/* project-sec */
+
+.project-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-sec h3 {
+  font-size: 3rem;
+  display: none;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-left: 3%;
+}
+
+.projects div {
+  width: 23%;
+  margin-bottom: 5%;
+}
+
+.projects div img {
+  border-radius: 20px 0px 20px 0;
+}
+
+.projects div h5 {
+  font-size: 1.8rem;
+}
+
+.projects div p {
+  display: none;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 200px;
+  color: var(--whitish);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  font-size: 3.2rem;
+  text-transform: lowercase;
+  margin: 2%;
+}
+
+footer a {
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 1024px) {
+
+  /* about section */
+  .about-me h3 {
+    font-size: 5rem;
+  }
+
+  /* project section  */
+  .projects div {
+    width: 23%;
+    margin-bottom: 5%;
+  }
+
+  .projects div img {
+    width: 150px;
+  }
+  
+}
+
+@media only screen and (max-width: 375px) {
+
+  /* body */
+
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* header */
+
+  header h1 {
+    font-size: 4.4rem;
+    text-align: center;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* about section */
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .about-me img {
+    width: 50%;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-content h3 {
+    font-size: 3rem;
+  }
+
+  .about-content p {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  /* project section */
+
+  .project-sec h3 {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .projects {
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: center; */
+    margin: 0 auto;
+  }
+
+  .projects div {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .projects div img {
+    width: 200px;
+  }
+
+  .projects div h5 {
+    text-align: center;
+  }
+}
