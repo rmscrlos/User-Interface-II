@@ -1,1 +1,61 @@
 /* Add CSS styling here */
+
+/* google fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+
+/* Reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Utility */
+
+:root {
+  --nightblue: #022449;
+  --neonorange: #f26d42;
+  --blues: #55BDCA;
+  --sokkablue: #96ffff;
+  --lightsokkablue: #c8eff9;
+  --whitish: #faf9f9;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--lightsokkablue);
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+header h1 {
+  font-size: 4.5rem;
+  text-transform: lowercase;
+  color: var(--whitish);
+  margin: 10% 0 1% 0;
+}
+
+header nav a {
+  padding: 5px 15px;
+  margin-right: 2px;
+  font-size: 1.4rem;
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  color: var(--whitish);
+  background: var(--neonorange);
+  border-radius: 25px;
+}
