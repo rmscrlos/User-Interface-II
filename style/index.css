@@ -31,6 +31,14 @@ a {
   background: var(--neonorange);
 }
 
+a:hover {
+  background: var(--nightblue);
+  color: var(--neonorange);
+  /* font-weight: bold; */
+  border-bottom: 2px solid var(--neonorange);
+  border-radius: 0px;
+}
+
 html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
@@ -58,10 +66,12 @@ header h1 {
 
 header nav a {
   padding: 5px 15px;
-  margin-right: 2px;
+  margin-right: 5px;
   font-size: 1.4rem;
-  border-radius: 25px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
+
 
 /* main */
 main {
@@ -106,6 +116,7 @@ main {
   padding: 5px 15px;
   border-radius: 10px;
   margin-bottom: 5%;
+  transition: 0.3s ease-in-out;
 }
 
 .about-content p {
@@ -127,9 +138,9 @@ main {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
-  padding-left: 3%
+  padding-left: 3%;
 }
 
 .projects div {
@@ -147,4 +158,29 @@ main {
 
 .projects div p {
   display: none;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 200px;
+  color: var(--whitish);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  font-size: 3.2rem;
+  text-transform: lowercase;
+  margin: 2%;
+}
+
+footer a {
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
