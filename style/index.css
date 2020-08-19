@@ -231,7 +231,7 @@ footer a {
   
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
 
   /* body */
 
@@ -249,7 +249,14 @@ footer a {
 
   header nav {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  header nav a {
+    margin: 1% 0;
+    width: 40%;
   }
 
   /* about section */
@@ -278,34 +285,28 @@ footer a {
 
   .about-content p {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   /* project section */
 
   .project-sec h3 {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .projects {
-    display: flex;
-    flex-flow: column wrap;
-    /* justify-content: center; */
-    margin: 0 auto;
+    display: none;
   }
 
   .projects div {
-    width: 100%;
+    align-items: center;
+    justify-content: flex-center;
+    width: 40%;
     padding-bottom: 50px;
   }
 
   .projects div img {
-    width: 200px;
+    width: 140px;
   }
 
   .projects div h5 {
     text-align: center;
+    font-size: 2rem;
   }
 }
