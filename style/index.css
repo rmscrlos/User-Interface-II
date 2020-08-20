@@ -33,7 +33,7 @@ a {
 
 a:hover {
   background: var(--nightblue);
-  color: var(--neonorange);
+  color: var(--whitish);
   /* font-weight: bold; */
   border-bottom: 2px solid var(--neonorange);
   border-radius: 0px;
@@ -111,7 +111,7 @@ main {
 }
 
 
-.about-content a {
+div.about-content a {
   font-size: 2.5rem;
   padding: 5px 15px;
   border-radius: 10px;
@@ -119,8 +119,12 @@ main {
   transition: 0.3s ease-in-out;
 }
 
+div.about-content a:hover {
+  border-bottom: none;
+}
+
 .about-content p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 
@@ -274,6 +278,7 @@ footer a {
   }
   
   .about-content {
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,4 +314,78 @@ footer a {
     text-align: center;
     font-size: 2rem;
   }
+}
+
+/* Stretch goals */
+@media only screen and (max-width: 360px) {
+
+  /* header */
+  header nav a {
+    font-size: 1.7rem;
+    margin-bottom: 3%;
+    width: 50%;
+  }
+  header nav {
+    margin-bottom: 10%;
+  }
+
+  /* about-me secion */
+  .about-me img {
+    margin: 0;
+    width: 200px;
+  }
+
+  .about-content p {
+    text-align: center;
+    font-size: 1.9rem;
+  }
+
+  /* porjects */
+
+  .projects div {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  /* They are perfect  */
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+  /* header */
+  header h1 {
+    font-size: 6rem;
+  }
+
+  header nav a {
+    font-size: 2rem;
+    border-radius: 30px;
+  }
+
+  /* about-me section */
+
+  .about-me {
+    justify-content: center;
+  }
+
+  .about-me img {
+    width: 400px;
+  }
+
+  /* footer */
+  footer {
+    padding: 10%;
+  }
+
+  footer h3 {
+    font-size: 4.2rem;
+  }
+
+  footer a {
+    font-size: 2rem;
+  }
+
 }
